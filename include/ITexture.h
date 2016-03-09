@@ -156,6 +156,12 @@ public:
 	/** \return The color format of texture. */
 	virtual ECOLOR_FORMAT getColorFormat() const = 0;
 
+	//! Get the name of the texture.
+	/** \return The name of texture. */
+	virtual u32 getTextureName() const {
+		return 0;
+	};
+
 	//! Get pitch of the main texture (in bytes).
 	/** The pitch is the amount of bytes used for a row of pixels in a
 	texture.

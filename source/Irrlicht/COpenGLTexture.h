@@ -77,6 +77,9 @@ public:
 	//! returns pitch of texture (in bytes)
 	virtual u32 getPitch() const;
 
+	//! return texture name
+	virtual u32 getTextureName() const { return getOpenGLTextureName(); }
+
 	//! return open gl texture name
 	GLuint getOpenGLTextureName() const;
 
